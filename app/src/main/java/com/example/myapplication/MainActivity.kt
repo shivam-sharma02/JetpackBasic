@@ -72,7 +72,12 @@ class MainActivity : ComponentActivity() {
                     LazyColumn {
                         items(names) {currentName ->
                             Text(
-                                text = currentName)
+                                text = currentName,
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(12.dp)
+                            )
+                            Divider()
                         }
                     }
                 }
